@@ -29,7 +29,7 @@ const config = {
     form: './app/js/form',
     utils: './app/js/utils',
     confFirebase: './app/js/firebase',
-    authFirebase: './app/js/auth',
+    authDateBase: './app/js/todo',
   }, // Arquivos de entrada
   output: {
     path: path.join(__dirname, 'hosting/public'), // Diretorio de saída
@@ -47,7 +47,7 @@ const config = {
     new htmlWebpackPlugin({
       template: path.join(__dirname, '/', 'index.html'),
       filename: 'index.html',
-      chunks: ['form', 'confFirebase', 'commons', 'authFirebase', 'utils'],
+      chunks: ['confFirebase', 'utils', 'authDateBase', 'commons', 'form',],
       minify,
     }),
     extractSass,
