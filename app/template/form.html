@@ -1,20 +1,43 @@
 <div>
   <div class="center">
-    <!--Formulário de tarefas-->
-    <form id="todoForm">
-      <h3 id="todoFormTitle">Adicionar tarefa:</h3>
-      <label for="name">Tarefa: </label>
-      <input type="text" id="name" placeholder="Tarefa">
-      <button type="submit" id="submitTodoForm">Adicionar tarefa</button>
+
+
+    <div id="userInfo" class="center">
+      <h3 id="authFormTitle">Dados do usuário logado</h3>
+      <p id="userName"></p>
+      <p id="userEmail"></p>
+      <p id="emailVerified"></p>
+      <hr id="auth" class="center">
+    </div>
+
+    <form id="authForm">
+      <h3 id="authFormTitle">Acesse a sua conta para continuar</h3>
+
+      <label for="email">E-mail: </label>
+      <input type="email" placeholder="E-mail" id="email">
+
+      <label for="password">Senha: </label>
+      <input type="password" placeholder="Senha" id="password">
+
+      <button type="submit" id="submitAuthForm">Acessar</button>
+      <hr id="auth" class="center">
     </form>
 
-    <br>
+    <div id="todo">
+      <!--Formulário de tarefas-->
+      <form id="todoForm">
+        <h3 id="todoFormTitle">Adicionar tarefa:</h3>
+        <label for="name">Tarefa: </label>
+        <input type="text" id="name" placeholder="Tarefa">
+        <button type="submit" id="submitTodoForm">Adicionar tarefa</button>
+      </form>
 
-    <!--Lista de tarefas do usuário-->
-    <div id="todoList">
-      <h3 id="todoCount">Carregando tarefas...</h3>
-      <ul id="ulTodoList"></ul>
+      <!--Lista de tarefas do usuário-->
+      <div id="todoList">
+        <h3 id="todoCount">Carregando tarefas...</h3>
+        <ul id="ulTodoList"></ul>
+      </div>
     </div>
-    
+
   </div>
 </div>
