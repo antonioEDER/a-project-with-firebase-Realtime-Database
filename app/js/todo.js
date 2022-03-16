@@ -7,6 +7,23 @@ var todoCount = document.getElementById('todoCount')
 todoForm.onsubmit = function (event) {
   event.preventDefault(); // Evita o redirecionamento da página
   if (todoForm.name.value != "") {
+
+    var file = todoForm.file.files[0] // Seleciona o primeiro aquivo da seleção de aquivos
+    if (file != null) { // Verifica se o arquivo foi selecionado
+      if (file.type.includes('image')) { // Verifica se o arquivo é uma imagem
+        // Compõe o nome do arquivo
+        var imgName = firebase.database().ref().push().key + '-' + file.name
+        // Compõe o caminho do arquivo
+        var imgPath = 'todoListFiles /' + firebase.auth().currentUser.uid + '/' + imgName
+
+        // Cria uma referência de arquivo usando o caminho criado na linha acima
+        var storageRef = firebase.storage().ref(imgPath)
+        
+        // Inicia o processo de upload
+        storageRef.put(file)
+      }
+    }
+    
     var data = {
       name: todoForm.name.value,
     };
