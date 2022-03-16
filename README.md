@@ -1,4 +1,4 @@
-# a-project-with-firebase-Realtime-Database
+# a-project-with-firebase-Realtime-Database-and-Cloud-Storage
 
 ```
 Esse é um projeto Front-End integrado com Firebase Realtime Database e Firebase Auth
@@ -40,3 +40,11 @@ yarn build
 - Nodemon
 - Firebase
 - Webpack
+
+<h2 align="center">Realtime Database</h2>
+<p>O Firebase Realtime Database é um banco de dados hospedado na nuvem. Os dados são armazenados como JSON e sincronizados em tempo real para cada cliente conectado. Quando você cria aplicativos multiplataforma com os nossos SDKs para Apple, Android e JavaScript, todos os seus clientes compartilham uma instância do Realtime Database e recebem automaticamente atualizações com os dados mais recentes. </p>
+
+
+<h2 align="center">Cloud Storage</h2>
+<p>O Cloud Storage do Firebase nos permite armazenar arquivos como fotos e vídeos gerados pelos nossos usuários.
+Ele conta com um sistema robusto de uploads/downloads buscando entregar uma boa experiência de uso mesmo quando os usuários utilizam conexões lentas ou instáveis com a internet. </p>
