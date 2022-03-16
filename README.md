@@ -1,7 +1,7 @@
 # a-project-with-firebase-Realtime-Database-and-Cloud-Storage
 
 ```
-Esse é um projeto Front-End integrado com Firebase Realtime Database e Firebase Auth
+Esse é um projeto Front-End integrado com Firebase Realtime Database, Firebase Auth e Cloud Storage
 ```
 
 
@@ -11,9 +11,11 @@ Esse é um projeto Front-End integrado com Firebase Realtime Database e Firebase
 
 - Implementar o acesso por e-mail+senha, 
 
-- Criar, ler, atualizar e remover dados nos bancos de dados Realtime Database
+- Criar, ler, atualizar e remover dados nos bancos de dados Realtime Database e Cloud Firestore
 
-- Definir regras de segurança e validação de informações no Realtime Database.
+- Enviar, obter, e remover arquivos no armazenamento do Cloud Storage
+
+- Definir regras de segurança e validação de informações no Realtime Database e Cloud Firestore.
 
 <h2 align="center">Install</h2>
 
